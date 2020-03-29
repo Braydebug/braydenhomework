@@ -137,3 +137,24 @@ dl {font-family: "Helvetica W02 roman", sans-serif;
 p.footer {
   text-indent: 0px;
 }
+/*Button*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #B22222;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}

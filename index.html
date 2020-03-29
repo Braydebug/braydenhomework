@@ -6,6 +6,7 @@
 <title>Baseball Fundamentals</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <main>
     <nav>
         <ul class ="menu">
@@ -17,6 +18,7 @@
         </nav>
         <div style="margin-left:15%;padding:1px 16px;height:1000px;">
         
+        <div id="myBtn"></div>
 <h1>Fundamentals of Baseball</h1>
 <h2>Out hustle. Out work. Out Play.</h2>
 <p>Baseball is the only sport where there is two teams of players, but is played by a bunch of individuals. 
@@ -46,4 +48,26 @@ These are specific fundamentals in the game of baseball that you should know in 
 </div>
 </html>
 </main>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
+
