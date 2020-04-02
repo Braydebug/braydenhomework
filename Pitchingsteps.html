@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="mywebsite.css">
+<meta charset="UTF-8">
+<title>Baseball Fundamentals</title>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<main>
+    <nav>
+        <ul class ="menu">
+            <li><a href="index.html">Home</a></li>
+        <li><a href="pitching.html">Pitching</a></li>
+        <li><a class="active menu" href="Pitchingsteps.html">Pitching Steps</a></li>
+        <li><a href="batting.html">Batting</a></li>
+        </ul>
+        </nav>
+        <div style="margin-left:15%;padding:1px 16px;height:1000px;">
+        
+        <div id="myBtn"></div>
+        <h1>Basic Steps for Pitching</h1>
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 25%;
+          padding: 10px;
+        }
+        
+        /* Style the images inside the grid */
+        .column img {
+        border: 5px solid #b22222;
+          opacity: 1; 
+          cursor: pointer; 
+        }
+        
+        .column img:hover {
+          opacity: .8;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* The expanding image container */
+        .container {
+          position: relative;
+          display: none;
+        }
+        
+        /* Expanding image text */
+        #imgtext {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          color: white;
+          font-size: 20px;
+        }
+        
+        /* Closable button inside the expanded image */
+        .closebtn {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          color: white;
+          font-size: 35px;
+          cursor: pointer;
+        }
+
+        .clearfix::after {
+        content: "";
+     clear: both;
+  display: table;
+}
+
+        </style>
+        </head>
+        <body>
+
+          <p>Click on the images below:</p>
+        
+        <!-- The four columns -->
+        <div class="row">
+          <div class="column">
+            <img src="windup.jpg" alt="Wind up step." style="width:100%" onclick="myFunction(this);">
+            <div class="desc">Wind up step is small on in control.</div>
+          </div>
+
+          <div class="column">
+            <img src="leglift.jpg" alt="Leg lift." style="width:100%" onclick="myFunction(this);">
+            <div class="desc">Leg lift should also be in control and keep you on balance.</div>
+          </div>
+          <div class="column">
+            <img src="hand break.jpeg" alt="Break your hands with legs." style="width:100%" onclick="myFunction(this);">
+            <div class="desc">Make sure to break your hands with your leg as you bring it down.</div>
+          </div>
+          <div class="column">
+            <img src="kickout1.jpg" alt="Kick your leg down and out." style="width:100%" onclick="myFunction(this);">
+            <div class="desc">Kick out your leg toward homeplate, making sure it stays in line.</div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <img src="Frontfootlanding.jpg" alt="Stay on balance as you move closer to the plate." style="width:100%" onclick="myFunction(this);">
+              <div class="desc">Your front foot should land in line with home plate and your weight is on the balls of your feet.</div>
+            </div>
+            <div class="column">
+              <img src="heeltotoe.jpg" alt="Land heel to toe" style="width:100%" onclick="myFunction(this);">
+              <div class="desc">Make sure to land heel to toe to get as close to the plate as possible.</div>
+            </div>
+            <div class="column">
+              <img src="Bring glove in.jpeg" alt="Bring your glove in" style="width:100%" onclick="myFunction(this);">
+              <div class="desc">Bring your glove <em>into</em> your chest for best accuracy.</div>
+            </div>
+            <div class="column">
+              <img src="realease.jpg" alt="Release the ball on balance" style="width:100%" onclick="myFunction(this);">
+              <div class="desc">Make sure you release the ball out front of your body for velocity.</div>
+            </div>
+          </div>
+          
+        <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
+        
+        <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+        
+        </body>
+        </html>

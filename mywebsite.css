@@ -10,7 +10,6 @@ font-weight: normal;
 letter-spacing: -6.5px;
 line-height: 130px;
 text-transform: normal;
-background-color: aqua;
 }
 h2 {text-align: left;
 font-family: "ProximaNovaSemiBold", sans-serif;
@@ -94,6 +93,8 @@ p {text-indent: 50px;
   font-style: normal;
   font-weight: normal;
 text-transform: normal;
+text-align: justify;
+margin-right: 35px;
 }
 blockquote {text-indent: 50px;
 font-family: "Helvetica W02 roman", sans-serif;
@@ -102,6 +103,14 @@ font-style: normal;
 font-weight: normal;
 text-transform: normal;
 } 
+figcaption {font-family: "Helvetica W02 roman", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: normal;
+  padding: 5px;
+  }
     ul {
     font-family: "Helvetica W02 roman", sans-serif;
   font-size: 16px;
@@ -137,6 +146,7 @@ dl {font-family: "Helvetica W02 roman", sans-serif;
 p.footer {
   text-indent: 0px;
 }
+
 /*Button*/
 
 #myBtn {
