@@ -13,7 +13,7 @@
             <li><a href="index.html">Home</a></li>
         <li><a href="pitching.html">Pitching</a></li>
         <li><a class="active menu" href="Pitchingsteps.html">Pitching Steps</a></li>
-        <li><a href="batting.html">Batting</a></li>
+        <li><a href="info.html">More Information</li></a>
         </ul>
         </nav>
         <div style="margin-left:15%;padding:1px 16px;height:1000px;">
@@ -29,12 +29,15 @@
           box-sizing: border-box;
         }
         
+        .figure {
+        width: 300px;
+        }
 
         /* The grid: Four equal columns that floats next to each other */
         .column {
           float: left;
           width: 25%;
-          padding: 10px;
+          padding: 5px;
         }
         
         /* Style the images inside the grid */
@@ -42,6 +45,7 @@
         border: 5px solid #b22222;
           opacity: 1; 
           cursor: pointer; 
+          width: 100%;
         }
         
         .column img:hover {
@@ -53,6 +57,8 @@
           content: "";
           display: table;
           clear: both;
+          display: flex;
+        flex-wrap: wrap;
         }
         
         /* The expanding image container */
@@ -93,50 +99,72 @@
           <p>Click on the images below:</p>
         
         <!-- The four columns -->
-        <div class="row">
+        <div class="row" :after>
+
           <div class="column">
+              <figure>
             <img src="windup.jpg" alt="Wind up step." style="width:100%" onclick="myFunction(this);">
-            <div class="desc">Wind up step is small on in control.</div>
+            <figcaption>Wind up step is small on in control.</figcaption>
+          </figure>
           </div>
 
           <div class="column">
+              <figure>
             <img src="leglift.jpg" alt="Leg lift." style="width:100%" onclick="myFunction(this);">
-            <div class="desc">Leg lift should also be in control and keep you on balance.</div>
+            <figcaption>Leg lift should also be in control and keep you on balance.</figcaption>
+            </figure>
           </div>
+
           <div class="column">
+              <figure>
             <img src="hand break.jpeg" alt="Break your hands with legs." style="width:100%" onclick="myFunction(this);">
-            <div class="desc">Make sure to break your hands with your leg as you bring it down.</div>
-          </div>
+            <figcaption>Make sure to break your hands with your leg as you bring it down.</figcaption>
+        </figure>  
+        </div>
+
           <div class="column">
+            <figure>
             <img src="kickout1.jpg" alt="Kick your leg down and out." style="width:100%" onclick="myFunction(this);">
-            <div class="desc">Kick out your leg toward homeplate, making sure it stays in line.</div>
+            <figcaption>Kick out your leg toward homeplate, making sure it stays in line.</figcaption>
+        </figure>  
+        </div>
+  
+            <div class="column">
+                <figure>
+              <img src="Frontfootlanding.jpg" alt="Stay on balance as you move closer to the plate." style="width:100%" onclick="myFunction(this);">
+              <figcaption>Your front foot should land in line with home plate and your weight is on the balls of your feet.</figcaption>
+            </figure>    
+            </div>
+
+            <div class="column">
+                <figure>
+              <img src="heeltotoe.jpg" alt="Land heel to toe" style="width:100%" onclick="myFunction(this);">
+              <figcaption>Make sure to land heel to toe to get as close to the plate as possible.</figcaption>
+           </figure>
+            </div>
+
+            <div class="column">
+                <figure>
+              <img src="Bring glove in.jpeg" alt="Bring your glove in" style="width:100%" onclick="myFunction(this);">
+              <figcaption>Bring your glove <em>into</em> your chest for best accuracy.</figcaption>
+            </figure>
+            </div>
+
+            <div class="column">
+                <figure>
+              <img src="realease.jpg" alt="Release the ball on balance" style="width:100%" onclick="myFunction(this);">
+              <figcaption>Make sure you release the ball out front of your body for velocity.</figcaption>
+           </figure>
+            </div>
           </div>
         </div>
-        <div class="row">
-            <div class="column">
-              <img src="Frontfootlanding.jpg" alt="Stay on balance as you move closer to the plate." style="width:100%" onclick="myFunction(this);">
-              <div class="desc">Your front foot should land in line with home plate and your weight is on the balls of your feet.</div>
-            </div>
-            <div class="column">
-              <img src="heeltotoe.jpg" alt="Land heel to toe" style="width:100%" onclick="myFunction(this);">
-              <div class="desc">Make sure to land heel to toe to get as close to the plate as possible.</div>
-            </div>
-            <div class="column">
-              <img src="Bring glove in.jpeg" alt="Bring your glove in" style="width:100%" onclick="myFunction(this);">
-              <div class="desc">Bring your glove <em>into</em> your chest for best accuracy.</div>
-            </div>
-            <div class="column">
-              <img src="realease.jpg" alt="Release the ball on balance" style="width:100%" onclick="myFunction(this);">
-              <div class="desc">Make sure you release the ball out front of your body for velocity.</div>
-            </div>
-          </div>
-          
+    
         <div class="container">
-          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <span onclick="this.parentElement.style.display='none' "class="closebtn">&times; </span>
           <img id="expandedImg" style="width:100%">
           <div id="imgtext"></div>
         </div>
-        
+   
         <script>
         function myFunction(imgs) {
           var expandImg = document.getElementById("expandedImg");
@@ -146,6 +174,6 @@
           expandImg.parentElement.style.display = "block";
         }
         </script>
-        
+        </main>
         </body>
         </html>
