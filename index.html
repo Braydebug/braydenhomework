@@ -4,6 +4,36 @@
     <link rel="stylesheet" type="text/css" href="mywebsite.css">
 <meta charset="UTF-8">
 <title>Baseball Fundamentals</title>
+<style>
+
+  figcaption {
+    display: block;
+  }
+
+          .responsive {
+            float: left;
+            width: 33%;
+          }
+          
+          @media only screen and (max-width: 800px) {
+            .responsive {
+              width: 49.99999%;
+              margin: 6px 0;
+            }
+          }
+          
+          @media only screen and (max-width: 500px) {
+            .responsive {
+              width: 100%;
+            }
+          }
+          
+          .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+  </style>
 </head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -23,27 +53,36 @@
 <h2>Out hustle. Out work. Out Play.</h2>
 
 <div class="clearfix">
+  <div class="responsive-container">
 
-  <div class="img-container">
+    <div class="responsive">
 <figure>
   <img src="BaseballStadium1.jpg" alt="Stadium1" style="width:100%">
   <figcaption>Fenway Park (Boston, Massachusetts)</figcaption>
     </figure>
   </div>
+</div>
   <div class="img-container">
+    <div class="responsive">
     <figure>
   <img src="BaseballStadium2.jpg" alt="Stadium2" style="width:100%">
   <figcaption>Oracle Park (San Francisco, California)</figcaption>
   </figure>
+</div>
   </div>
   <div class="img-container">
+    <div class="responsive">
     <figure>
   <img src="BaseballStadium3.jpg" alt="Stadium3" style="width:100%">
   <figcaption>Globe Life (Arlington, Texas)</figcaption>
   </figure>
   </div>
+  </div>
 </div>
 </figure>
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
 <p>Baseball is the only sport where there is two teams of players, but is played by a bunch of individuals. 
 Each position has their own specific route they need to take when the ball is hit in to play. 
 Each position has to know where the ball needs to go if it is hit to them.

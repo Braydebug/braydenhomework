@@ -25,126 +25,139 @@
         <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        .figure {
-        width: 300px;
-        }
+          div.gallery {
+            border: 1px solid #ccc;
+          }
+          
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+          
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          .responsive {
+            padding: 0 10px;
+            float: left;
+            width: 24.99999%;
+            padding-bottom: 10px;
+          }
+          
+          @media only screen and (max-width: 800px) {
+            .responsive {
+              width: 49.99999%;
+              margin: 6px 0;
+            }
+          }
+          
+          @media only screen and (max-width: 500px) {
+            .responsive {
+              width: 100%;
+            }
+          }
+          
+          .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          </style>
 
-        /* The grid: Four equal columns that floats next to each other */
-        .column {
-          float: left;
-          width: 25%;
-          padding: 5px;
-        }
-        
-        /* Style the images inside the grid */
-        .column img {
-        border: 5px solid #b22222;
-          opacity: 1; 
-          cursor: pointer; 
-          width: auto ;
-  max-width: 100% ;
-  height: auto ;
-}
-        
-        .column img:hover {
-          opacity: .5;
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-          display: flex;
-        flex-wrap: wrap;
-        }
-
-        </style>
         </head>
         <body>
 
           <p>Click on the images below:</p>
-        
-        <!-- The four columns -->
-        <div class="row" :after>
 
-          <div class="column">
-              <figure>
-            <img src="windup.jpg" alt="Wind up step." style="width:100%" onclick="myFunction(this);">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="windup.jpg">
+            <img src="windup.jpg" alt="Wind up step." width=auto>
+            </a>
             <figcaption>Wind up step is small on in control.</figcaption>
-          </figure>
+          </div>
           </div>
 
-          <div class="column">
-              <figure>
-            <img src="leglift.jpg" alt="Leg lift." style="width:100%" onclick="myFunction(this);">
+           
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="leglift.jpg">
+            <img src="leglift.jpg" alt="Leg lift." width=auto>
+            </a>
             <figcaption>Leg lift should also be in control and keep you on balance.</figcaption>
-            </figure>
+            </div>
           </div>
 
-          <div class="column">
-              <figure>
-            <img src="hand break.jpeg" alt="Break your hands with legs." style="width:100%" onclick="myFunction(this);">
+           
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="hand break.jpeg">
+            <img src="hand break.jpeg" alt="Break your hands with legs." width=auto>
+            </a>
             <figcaption>Make sure to break your hands with your leg as you bring it down.</figcaption>
-        </figure>  
+          </div>
         </div>
 
-          <div class="column">
-            <figure>
-            <img src="kickout1.jpg" alt="Kick your leg down and out." style="width:100%" onclick="myFunction(this);">
+           
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="kickout1.jpg">
+            <img src="kickout1.jpg" alt="Kick your leg down and out." width=auto>
+            </a>
             <figcaption>Kick out your leg toward homeplate, making sure it stays in line.</figcaption>
-        </figure>  
+          </div>
         </div>
   
-            <div class="column">
-                <figure>
-              <img src="Frontfootlanding.jpg" alt="Stay on balance as you move closer to the plate." style="width:100%" onclick="myFunction(this);">
+             
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="Frontfootlanding.jpg">
+              <img src="Frontfootlanding.jpg" alt="Stay on balance as you move closer to the plate." width=auto>
+              </a>
               <figcaption>Your front foot should land in line with home plate and your weight is on the balls of your feet.</figcaption>
-            </figure>    
+             </div>   
             </div>
 
-            <div class="column">
-                <figure>
-              <img src="heeltotoe.jpg" alt="Land heel to toe" style="width:100%" onclick="myFunction(this);">
+             
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="heeltotoe.jpg">
+              <img src="heeltotoe.jpg" alt="Land heel to toe" width=auto>
+</a>
               <figcaption>Make sure to land heel to toe to get as close to the plate as possible.</figcaption>
-           </figure>
+           </div>
             </div>
 
-            <div class="column">
-                <figure>
-              <img src="Bring glove in.jpeg" alt="Bring your glove in" style="width:100%" onclick="myFunction(this);">
+            
+              <div class="responsive">
+                <div class="gallery">
+
+                <a target="_blank" href="Bring glove in.jpeg.jpg">
+              <img src="Bring glove in.jpeg" alt="Bring your glove in" width=auto>
+              </a>
               <figcaption>Bring your glove <em>into</em> your chest for best accuracy.</figcaption>
-            </figure>
+            </div>
             </div>
 
-            <div class="column">
-                <figure>
-              <img src="realease.jpg" alt="Release the ball on balance" style="width:100%" onclick="myFunction(this);">
+             
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="realease.jpg">
+              <img src="realease.jpg" alt="Release the ball on balance" width=auto>
+              </a>
               <figcaption>Make sure you release the ball out front of your body for velocity.</figcaption>
-           </figure>
             </div>
           </div>
+          <div class="clearfix"></div>
+
+          <div style="padding:6px;">
+
         </div>
-    
-        <div class="container">
-          <span onclick="this.parentElement.style.display='none' "class="closebtn">&times; </span>
-          <img id="expandedImg" style="width:100%">
-          <div id="imgtext"></div>
-        </div>
-   
-        <script>
-        function myFunction(imgs) {
-          var expandImg = document.getElementById("expandedImg");
-          var imgText = document.getElementById("imgtext");
-          expandImg.src = imgs.src;
-          imgText.innerHTML = imgs.alt;
-          expandImg.parentElement.style.display = "block";
-        }
-        </script>
         </main>
         </body>
         </html>

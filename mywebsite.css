@@ -176,23 +176,13 @@ p.footer {
 #myBtn:hover {
   background-color: #555;
 }
-/*Images*/
-
-* {
-  box-sizing: border-box;
-}
-
-.img-container {
-  float: left;
-  width: 33.33%;
-  padding: 20px;
-}
 
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
+
 /*information page*/
 
 legend { 
