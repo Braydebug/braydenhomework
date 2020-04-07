@@ -22,7 +22,7 @@
         
 <h1>For more information</h1>
 
-<form action= "thanks.html" method="post">
+<form action="thanks.html" target="_blank" method="post">
 
 <fieldset>
         <legend>Specific fundamentals</legend>
@@ -36,15 +36,17 @@
     </fieldset>
     <fieldset>
         <legend>Login info</legend>
-    <label for="fname"><br>Name:</label><br><br>
-    <input type="text" placeholder="Full Name" id="fname" name="fname"><br><br>
 
-    <label for="username">Username: </label><br><br>
+
+
+    <label><span>Name:</span><br><br>
+      <input type='text' /></label><br><br>
+    <label><span>Username:</span></label><br><br>
     <input type="text" id="uname" name="name" required size="45"
            pattern="[a-z]{4,8}" title="4 to 8 lowercase letters">
     <span class="validity"></span>
     <h4>Usernames must be lowercase and 4-8 characters in length.</h4>
-    <label for="pwd">Password:</label><br><br>
+    <label><span>Password:</span></label><br><br>
     <span class="validity"></span>
     <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
     <h4>Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</h4>
@@ -54,13 +56,24 @@
     <legend>Gender</legend>
     <h4>Please select your gender:</h4>
     <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label><br>
+    <label><span>Male</span></label><br>
     <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br>
+    <label><span>Female</span></label><br>
     <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Other</label><br><br>
+    <label><span>Other</span></label><br><br>
   </fieldset><br>
 
+  <fieldset>
+    <legend>Level</legend> 
+<label for="level">Choose which level you are currently playing:</label>
+    <select id="level">
+      <option value="little league">Little league</option>
+      <option value="super league">Super league</option>
+      <option value="highschool">Highschool</option>
+      <option value="College">College</option>
+    </select>
+      
+  </fieldset>
 <fieldset> 
     <legend>Personal info</legend> 
     <label for="birthday">Birthday:</label><br><br>
@@ -77,6 +90,7 @@
 </fieldset>
 <input type="reset" value="Reset">
 <input type="submit" value="Submit"><br><br>
+
  </form>
  
 
