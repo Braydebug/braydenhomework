@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="mywebsite.css">
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Baseball Fundamentals</title>
 <style>
 
@@ -10,20 +11,20 @@
     display: block;
   }
 
-          .responsive {
+          .responsive-b {
             float: left;
-            width: 33%;
+            width: 33.33%;
           }
           
           @media only screen and (max-width: 800px) {
-            .responsive {
+            .responsive-b {
               width: 49.99999%;
               margin: 6px 0;
             }
           }
           
           @media only screen and (max-width: 500px) {
-            .responsive {
+            .responsive-b {
               width: 100%;
             }
           }
@@ -33,29 +34,43 @@
             display: table;
             clear: both;
           }
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+figure {  box-shadow: 10px 10px 5px #aaaaaa;
+}
   </style>
 </head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <main>
+  <div id="grad1">
+  <div class="wrapper">
+    <div class="col-">
     <nav>
-        <ul class ="menu">
-            <li><a class="active menu" href="index.html">Home</a></li>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <li><a href="index.html">Home</a></li>
         <li><a href="pitching.html">Pitching</a></li>
         <li><a href="Pitchingsteps.html">Pitching Steps</a></li>
         <li><a href="info.html">More Information</a></li>
-        </ul>
         </nav>
-        <div style="margin-left:15%;padding:1px 16px;height:1000px;">
+        <div style="margin-left:18%;padding:15px 16px;height:1000px;">
         
         <div id="myBtn"></div>
+  <div class="responsive">
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
 <h1>Fundamentals of Baseball</h1>
 <h2>Out hustle. Out work. Out Play.</h2>
+</div>
+  <div class="clearfix">
+    <div class="img-container">
+      <div class="responsive-b">
 
-<div class="clearfix">
-  <div class="responsive-container">
-
-    <div class="responsive">
 <figure>
   <img src="BaseballStadium1.jpg" alt="Stadium1" style="width:100%">
   <figcaption>Fenway Park (Boston, Massachusetts)</figcaption>
@@ -63,7 +78,7 @@
   </div>
 </div>
   <div class="img-container">
-    <div class="responsive">
+    <div class="responsive-b">
     <figure>
   <img src="BaseballStadium2.jpg" alt="Stadium2" style="width:100%">
   <figcaption>Oracle Park (San Francisco, California)</figcaption>
@@ -71,7 +86,7 @@
 </div>
   </div>
   <div class="img-container">
-    <div class="responsive">
+    <div class="responsive-b">
     <figure>
   <img src="BaseballStadium3.jpg" alt="Stadium3" style="width:100%">
   <figcaption>Globe Life (Arlington, Texas)</figcaption>
@@ -81,8 +96,8 @@
 </div>
 </figure>
 <div class="clearfix"></div>
+<div class="responsive">
 
-<div style="padding:6px;">
 <p>Baseball is the only sport where there is two teams of players, but is played by a bunch of individuals. 
 Each position has their own specific route they need to take when the ball is hit in to play. 
 Each position has to know where the ball needs to go if it is hit to them.
@@ -102,7 +117,7 @@ These are specific fundamentals in the game of baseball that you should know in 
 </ol>
 <footer>
 <p class ="footer">Written by Brayden Erickson &copy;</p>
-<ol type= "i">
+<ol class="a" type= "i">
     <li>March 26, 2020</li>
 </ol>
 
@@ -130,6 +145,15 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
 }
 </script>
 </body>

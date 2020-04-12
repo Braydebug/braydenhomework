@@ -2,23 +2,31 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="mywebsite.css">
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Baseball Fundamentals</title>
 </head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <main>
+  <div id="grad1">
+  <div class="wrapper">
+    <div class="col-">
     <nav>
-        <ul class ="menu">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <li><a href="index.html">Home</a></li>
         <li><a href="pitching.html">Pitching</a></li>
-        <li><a class="active menu" href="Pitchingsteps.html">Pitching Steps</a></li>
+        <li><a href="Pitchingsteps.html">Pitching Steps</a></li>
         <li><a href="info.html">More Information</li></a>
-        </ul>
+</div>
         </nav>
-        <div style="margin-left:15%;padding:1px 16px;height:1000px;">
+        <div style="margin-left:18%;padding:1px 16px;height:1000px;">
         
         <div id="myBtn"></div>
+          <div class="clearfix">
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> 
         <h1>Basic Steps for Pitching</h1>
         <!DOCTYPE html>
         <html>
@@ -31,6 +39,7 @@
           
           div.gallery:hover {
             border: 1px solid #777;
+            opacity: 70%;
           }
           
           div.gallery img {
@@ -67,6 +76,7 @@
             display: table;
             clear: both;
           }
+          
           </style>
 
         </head>
@@ -161,3 +171,13 @@
         </main>
         </body>
         </html>
+        <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }</script>

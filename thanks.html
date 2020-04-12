@@ -2,26 +2,75 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="mywebsite.css"></link>
-<meta http-equiv = "refresh" content = "3; url = https://www.braydenerickson.com" />
+<meta charset="UTF-8">
 <title>Pitching Fundamentals</title>
-</head>
+<style>         
+.responsive {
+  float: left;
+  width: 33%;
+}
 
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}</style>
+</head>
 <body>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <main>
+    <div id="grad1">
+      <div class="wrapper">
+        <div class="col-">
+  </main>
   <div>
-  <ul class="menu">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 <li><a href="index.html">Home</a></li>
 <li><a href="pitching.html">Pitching</li></a>
 <li><a href="Pitchingsteps.html">Pitching Steps</a></li>
 <li><a href="info.html">More Information</li></a>
-</ul>
+</div>
 </nav>
 </div>
-<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+<div style="margin-left:18%;padding:1px 16px;height:1000px;">
   <nav>
+    <div class="responsive">
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
 <h1>Thanks for your submission!</h1>
 <div id="myBtn"></div> 
-<div class="clearfix">
+<div class="responsive-container">
+  <div class="responsive">
+  <div class="clearfix">
 </html>
 
-<main>
+</main>
+<script>
+  function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
