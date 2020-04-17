@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <html>
 <head>
   <link rel="stylesheet" type="text/css" href="mywebsite.css"></link>
 <meta charset="UTF-8">
@@ -7,42 +8,40 @@
 <title>Pitching Fundamentals</title>
 </head>
 
-<body>
+
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <div>
     <main>
+      <div class="col-">
+<div id="myBtn"></div> 
       <div id="grad1">
-    <div class="wrapper">
+        <div class="wrapper">
+            <body>
+            <nav>
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 <li><a href="index.html">Home</a></li>
 <li><a href="pitching.html">Pitching</li></a>
 <li><a href="Pitchingsteps.html">Pitching Steps</a></li>
 <li><a href="info.html">More Information</li></a>
+<li><a href="pitchingvideo.html">Steps In Action</a></li>
+<li><a href="cost.html">Cost</a></li>
+<li><a href="navigation.html">Our Location</a></li>
 </div>
 </nav>
 <div style="margin-left:18%;padding:1px 16px;height:1000px;">
-  <nav>
         <div id="main">
       <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> 
 <h1>Pitching</h1>
-<div id="myBtn"></div> 
+
 <div class="clearfix">
+
   <div class="img-container">
 <figure>
-  <style>
-  .img-container {
-  float: right;
-  width: 33.33%;
-  padding: 0px;
-}
-
-  </style>
  <a href="https://www.baseball-reference.com/players/k/kershcl01-pitch.shtml"><img src="Kershaw.jpg" alt="Kershaw" style="width:100%"></a>
   <figcaption>Clayton Kershaw, LA Dogers</figcaption>
-    </figure>
-  </div>
-
+    </div>
+  </figure>
 <p>Pitching is one of the toughest strategic battles in sports.
 As <em><a href="https://www.biography.com/athlete/yogi-berra"> Yogi Berra</a></href></em> once said,</p>
     <blockquote> "Baseball is ninety percent mental and the other half is physical." </blockquote>
@@ -97,7 +96,17 @@ When all of this is done correctly and in synch, your ball will be faster, and m
   <dd>Put your middle and index finger together and grip the ball on the seam of the horseshoe. Try and adjust your wrist to be sideways so when thrown, the ball has a foward spin to it.</dd>
 </dl>
 </div>
+</main>
 </body>
+</html>
+
+<style>
+  .img-container {
+  float: right;
+  width: 33.33%;
+  padding: 0px;
+}
+</style>
 <script>
 //Get the button
   var mybutton = document.getElementById("myBtn");
@@ -128,6 +137,3 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-</html>
-
-</main>

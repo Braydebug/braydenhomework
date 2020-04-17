@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="mywebsite.css"></link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pitching Fundamentals</title>
+</head>
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div>
+    <main>
+<div id="myBtn"></div> 
+      <div id="grad1">
+        <div class="wrapper">
+          <div class="col-">
+            <body>
+            <nav>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<li><a href="index.html">Home</a></li>
+<li><a href="pitching.html">Pitching</li></a>
+<li><a href="Pitchingsteps.html">Pitching Steps</a></li>
+<li><a href="info.html">More Information</li></a>
+<li><a href="pitchingvideo.html">Steps In Action</a></li>
+<li><a href="cost.html">Cost</a></li>
+<li><a href="navigation.html">Our Location</a></li>
+</div>
+</nav>
+<div style="margin-left:18%;padding:1px 16px;height:1000px;">
+        <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+<h1>Cost for coaching</h1>
+
+<table style="width:100%">
+    <tr>
+        <th>Classes</th>
+        <th>Cost</th>
+        </tr>
+    <tr>
+      <td>Single Private Training</td>
+      <td>$100 per hour</td>
+    </tr>
+    <tr>
+      <td>Single Group Taining</td>
+      <td>$45 per hour</td>
+    </tr>
+    <tr>
+        <td>4 Week Private Training</td>
+        <td>$175 per week</td>
+      </tr>
+      <tr>
+        <td>8 Week Private Training</td>
+        <td>$150 per week</td>
+      </tr>
+      <tr>
+        <td>On Going Private Training</td>
+        <td>$125 per week</td>
+      </tr>
+  </table><br><br>
+<li class="c">Trains for 1 hour per session</li>
+<li class="c">Twice per week</li>
+<p>For more info, questions, or to schedule times email me <a href="braydebug12@gmail.com">here.</a></p>
+
+</html>
+</main>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+<style>
+  li.c:before {
+    position: relative;
+    left: -15px;
+    bottom: -3px;
+  }
+  li.c {font-family: "Helvetica W02 roman", sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: normal;
+text-transform: normal;
+}
+  </style>
+</body>

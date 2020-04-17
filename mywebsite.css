@@ -131,7 +131,7 @@ figcaption {font-family: "Helvetica W02 roman", sans-serif;
   font-weight: normal;
 text-transform: normal; 
 display: block;
-width: 200px;
+width: auto;
 background-color: #dddddd
 }
 ol {
@@ -168,7 +168,7 @@ color: rgb(0, 0, 0);
     background-image: url(baseball.jpg);
     background-repeat: no-repeat;
     background-position: top left; 
-    max-width: 66.66%;
+    max-width: auto;
     display: inline-block;
     background-color: rgb(199, 188, 188);
     padding-left: 10px;
@@ -267,14 +267,16 @@ text-transform: normal;
 input[type=submit]:hover, input[type=reset]:hover{
     background-color: rgb(0, 0, 0);
   color: white;}
+
   /*wrap*/
+
   .wrapper {
 margin: 0 auto;
     max-width: 960px; /* 2 */
     padding-right: 10px; /* 3 */
     padding-left:  10px; /* 3 */
     max-height: fit-content;
-}
+  }
 
 .responsive {
   float: left;
@@ -402,3 +404,56 @@ body {background-image: url(#grad1)
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+
+/*video*/
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+
+}
+/*Table*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: none;
+  font-family: "ProximaNovaSemiBold", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0px;
+  line-height: 37px;
+}
+
+td {
+  font-family: "Helvetica W02 roman", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: normal;
+}
+tr:hover {background-color:#B22222;
+color: white;
+}
+
+tr:nth-child(even):hover {
+  background-color: #B22222;
+}
+
+tr:nth-child(even) {background-color: #d8d8d8;}

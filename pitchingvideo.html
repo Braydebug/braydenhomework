@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="mywebsite.css"></link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pitching Fundamentals</title>
+</head>
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div>
+    <main>
+<div id="myBtn"></div> 
+      <div id="grad1">
+        <div class="wrapper">
+          <div class="col-">
+            <body>
+            <nav>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<li><a href="index.html">Home</a></li>
+<li><a href="pitching.html">Pitching</li></a>
+<li><a href="Pitchingsteps.html">Pitching Steps</a></li>
+<li><a href="info.html">More Information</li></a>
+<li><a href="pitchingvideo.html">Steps In Action</a></li>
+<li><a href="cost.html">Cost</a></li>
+<li><a href="navigation.html">Our Location</a></li>
+</div>
+</nav>
+<div style="margin-left:18%;padding:1px 16px;height:1000px;">
+        <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+<h1>Pitching steps in action</h1>
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZZQKsPt_g_Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <iframe src="https://www.npr.org/player/embed/714582790/714738918" width="560" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
+    <audio controls>
+        <source src="San Marino Apartments 2.oggvorbis.ogg" width="560" type="audio/ogg">
+      </audio>
+      
+    </html>
+    </main>
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    
+    </script>
+    </body>
+    
+    
