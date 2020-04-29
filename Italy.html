@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="travelwebsite.css">
+    <link rel="stylesheet" type="text/css" href="small-device.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel Agency</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Destinations <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="france.html">Paris</a>
+              <a href="Unitedkindom.html">London</a>
+              <a href="Italy.html">Rome</a>
+            </div>
+          </div> 
+          <div class="subnav">
+            <button class="subnavbtn">Travel Clips <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="francevideo.html">Paris</a>
+                <a href="Ukvideo.html">London</a>
+                <a href="Italyvideo.html">Rome</a>
+            </div>
+          </div> 
+          <div class="subnav">
+            <button class="subnavbtn">Packages <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="ParisPackages.html">Paris</a>
+                <a href="LondonPackages.html">London</a>
+                <a href="RomePackages.html">Rome</a>
+            </div>
+          </div>
+          <a href="contact.html">Contact</a>
+        </div>
+
+    <h2>Your Journey Travel Agency</h2>
+
+    <h3>Rome</h3>
+
+
+    <div class="row">
+        <div class="column">
+            <div class="crop a">
+          <img src="Rome 1.jpg" alt="Colosseum" style="width:100%; overflow: hidden;" onclick="myFunction(this);">
+        </div>
+    </div>
+        <div class="column">
+            <div class="crop a">
+          <img src="Rome 2.jpg" alt="Cityscape From Vatican" style="width:100%; overflow: hidden;" onclick="myFunction(this);">
+        </div>
+    </div>
+        <div class="column">
+            <div class="crop a">
+          <img src="Rome 3.jpg" alt="Trevi Fountain" style="width:100%; overflow: hidden;" onclick="myFunction(this);">
+        </div>
+    </div>
+        <div class="column">
+            <div class="crop a">
+          <img src="Rome 4.jpg" alt="Pantheon" style="width:100%; overflow: hidden;" onclick="myFunction(this);">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="crop a">
+          <img src="Rome 5.jpg" alt="St. Peter's" style="width:100%; overflow: hidden;" onclick="myFunction(this);">
+        </div>
+    </div>
+        <div class="column">
+            <div class="crop a">
+          <img src="Rome 6.jpg" alt="Inside Colosseum" style="width:100%; overflow: hidden;" onclick="myFunction(this);">
+        </div>
+    </div>
+        <div class="column">
+            <div class="crop a">
+          <img src="Rome 7.jpg" alt="Pasta" style="width:100%; overflow: hidden;" onclick="myFunction(this);">
+        </div>
+    </div>
+        <div class="column">
+            <div class="crop a">
+          <img src="Rome 8.jpeg" alt="Rome Cityscape" style="width:100%; overflow: hidden;" onclick="myFunction(this);">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+      <div class="wrapper">
+      <h4>Travelling In Rome</h4>
+<p>Rome is magnificent and overwhelming at the same time. 
+    It's a showcase of Western civilization, with astonishingly ancient sights and a modern vibrancy. 
+    As you peel through its fascinating and jumbled layers, you'll find the marble ruins of ancient times, tangled streets of the medieval world, early Christian churches, grand Renaissance buildings and statues, Baroque fountains and facades, 21st-century traffic, and nearly three million people. 
+    Visit St. Peter's, the greatest church on earth, learn something about eternity by touring the huge Vatican Museums, ramble among the rabble and rubble through ancient Rome's Colosseum and Forum, savor the sumptuous Borghese Gallery, and take an early evening stroll with Rome's beautiful people.</p>
+<h4>On Your Own Rome Itinerary</h4>
+    <ul>
+        <li><strong>Day 1: </strong><br> Do the "Caesar Shuffle" from the Colosseum to the Forum, Capitoline Museums, Victor Emmanuel Monument viewpoint, and Pantheon. Spend the late afternoon doing my guidebooks' Heart of Rome Walk (also available as a free audio tour).</li><br>
+        <li><strong>Day 2: </strong><br> In the morning, visit the National Museum of Rome and the nearby Baths of Diocletian. In the afternoon do my Jewish Ghetto Walk, followed immediately by my Trastevere Walk (both walks are outlined in my Rome guidebooks and available as a free audio tour). Enjoy dinner in Trastevere.</li><br>
+        <li><strong>Day 3: </strong><br> In Vatican City, visit St. Peter's Basilica, dome climb, and tour the Vatican Museums. Spend the early evening shopping and enjoying the local passeggiata by doing what I call the "Dolce Vita Stroll" along Via del Corso (start at Piazza del Popolo and end up at Piazza Venezia for great sunset views).</li><br>
+        <li><strong>Day 4: </strong><br> Side-trip to Ostia Antica (closed Mon). In the evening, you could repeat my guidebooks' "Heart of Rome" walk from Campo de' Fiori to the Spanish Steps to enjoy the after-dark scene.</li><br>
+        <li><strong>Day 5: </strong><br> Visit the Borghese Gallery (reservation required) and the churches I group as the key elements of "Pilgrims' Rome": San Giovanni in Laterano, Santa Maria Maggiore, and San Clemente.</li><br>
+        <li><strong>Day 6: </strong><br> Day-trip to Naples and Pompeii.</li>
+        <li><strong>Day 7: </strong><br> You choose — Hadrian's Villa near Tivoli, Appian Way with catacombs, E.U.R., Testaccio sights, a food tour, shopping, Galleria Doria Pamphilj, Castel Sant'Angelo, or more time at the Vatican.</li>
+    </ul>
+
+      <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+
+    </div>
+
+      <div class="clearfix"></div>
+    </div>
+</body>
+</html>

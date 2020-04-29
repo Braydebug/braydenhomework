@@ -1,164 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" type="text/css" href="mywebsite.css">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Baseball Fundamentals</title>
-<style>
-
-  figcaption {
-    display: block;
-  }
-
-          .responsive-b {
-            float: left;
-            width: 33.33%;
-          }
-          
-          @media only screen and (max-width: 800px) {
-            .responsive-b {
-              width: 49.99999%;
-              margin: 6px 0;
-            }
-          }
-          
-          @media only screen and (max-width: 500px) {
-            .responsive-b {
-              width: 100%;
-            }
-          }
-          
-          .clearfix:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-figure {  box-shadow: 10px 10px 5px #aaaaaa;
-}
-  </style>
+    <link rel="stylesheet" type="text/css" href="travelwebsite.css">
+    <link rel="stylesheet" type="text/css" href="small-device.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel Agency</title>
 </head>
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<main>
-  <div id="grad1">
     <div class="wrapper">
-    <div class="col-">
-    <nav>
-
-        <div id="mySidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <li><a href="index.html">Home</a></li>
-        <li><a href="pitching.html">Pitching</a></li>
-        <li><a href="Pitchingsteps.html">Pitching Steps</a></li>
-        <li><a href="info.html">More Information</a></li>
-        <li><a href="pitchingvideo.html">Steps In Action</a></li>
-        <li><a href="cost.html">Cost</a></li>
-        <li><a href="navigation.html">Our Location</a></li>
-        </nav>
-        <div style="margin-left:18%;padding:15px 16px;height:1000px;">
-        
-        <div id="myBtn"></div>
-  <div class="responsive">
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
-<h1>Fundamentals of Baseball</h1>
-<h2>Out hustle. Out work. Out Play.</h2>
+    <div class="col-12">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Destinations <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="france.html">Paris</a>
+              <a href="Unitedkindom.html">London</a>
+              <a href="Italy.html">Rome</a>
+            </div>
+          </div> 
+          <div class="subnav">
+            <button class="subnavbtn">Travel Clips <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="francevideo.html">Paris</a>
+              <a href="Ukvideo.html">London</a>
+              <a href="Italyvideo.html">Rome</a>
+            </div>
+          </div> 
+          <div class="subnav">
+            <button class="subnavbtn">Packages <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="ParisPackages.html">Paris</a>
+              <a href="LondonPackages.html">London</a>
+              <a href="RomePackages.html">Rome</a>
+            </div>
+          </div>
+          <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <h2>Your Journey Travel Agency</h2>
+    <img src="airplane.jpeg" alt="Airplane Flying" style="width:30%; overflow: hidden; float: right; border-radius: 20px; padding: 10px;">
+    <p>Established in 2015 our travel agency has thrived in giving you the best traveling experience you can have.
+        We specialize in European vacations and are excited to share our European experiences with you. 
+        Our Europe travel agents will listen closely and utilize their travel expertise and partnerships with hotels and tour operators to create a personalized vacation experience just for you!
+    </p>
+<p>Europe consists of timeless landscapes, quiet country roads, poppy fields, and stone farmhouses encircled by elegant cypresses. 
+    Discover treasures of medieval villages perched on hillsides cloaked with dark forests hiding truffle secrets. 
+    Listen to fountains splash in sunny squares or waves sweeping the shore. 
+    Walk along old pilgrimage routes past roadside crosses and tiny chapels or follow in artists’ footsteps by seeing where they created their masterpieces and the museums that now protect those works. 
+    With so many cultural influences over the past centuries, Europe has become a vacation spot that never disappoints. 
+    The diversity across Europe can only be experienced first-hand, and thankfully the European Union has welcomed many travelers and made international travel easier than many can imagine.
+</p>
 </div>
-  <div class="clearfix">
-    <div class="img-container">
-      <div class="responsive-b">
-
-<figure>
-  <img src="BaseballStadium1.jpg" alt="Stadium1" style="width:100%">
-  <figcaption>Fenway Park (Boston, Massachusetts)</figcaption>
-    </figure>
-  </div>
 </div>
-  <div class="img-container">
-    <div class="responsive-b">
-    <figure>
-  <img src="BaseballStadium2.jpg" alt="Stadium2" style="width:100%">
-  <figcaption>Oracle Park (San Francisco, California)</figcaption>
-  </figure>
-</div>
-  </div>
-  <div class="img-container">
-    <div class="responsive-b">
-    <figure>
-  <img src="BaseballStadium3.jpg" alt="Stadium3" style="width:100%">
-  <figcaption>Globe Life (Arlington, Texas)</figcaption>
-  </figure>
-  </div>
-  </div>
-</div>
-</figure>
-<div class="clearfix"></div>
-<div class="responsive">
-
-<p>Baseball is the only sport where there is two teams of players, but is played by a bunch of individuals. 
-Each position has their own specific route they need to take when the ball is hit in to play. 
-Each position has to know where the ball needs to go if it is hit to them.
-Each position must react to the ball and trust their teammates are taking their correct route for the play.
-There are so many things that can happen after each pitch that the basic fundamentals should be natural to the player.
-There is no time to think "how should I field this ball" or "how do I adjust to hit this curveball."
-All of those things should be practiced and come naturally, so you have time to react to where the opposing team is at.
-These are specific fundamentals in the game of baseball that you should know in order to be a successful ball player. 
-
-<h3>What this website will help you with</h3>
-<ol>
-    <li class="throw">Basic mechanics of Pitching and different pithces you can <a class="throw" href="pitching.html#learn">throw.</a></li>
-    <li>Basic mechanics of Fielding</li>
-    <li>Basic mechanics of Batting</li>
-    <li>Strategies on how to get better</li>
-    <li><strong>Understand what coaches are looking for.</strong></li>
-</ol>
-<p>Explaining more science about <a href="pitchingbrochure.pdf">pitching.</a></p>
-<footer>
-<p class ="footer">Written by Brayden Erickson &copy;</p>
-<ol class="a" type= "i">
-    <li>March 26, 2020</li>
-</ol>
-
-<a href="braydebug12@gmail.com">Email Me</a>
-</footer>
-</div>
-</html>
-</main>
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
 </body>
-
+</html>
